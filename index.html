@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Chauhan - Civil Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Ayush Chauhan - Civil Engineer, Data Scientist, and Researcher specializing in infrastructure data analysis and machine learning applications.">
+    <meta name="keywords" content="civil engineer, data scientist, machine learning, infrastructure, GIS, research">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ayush Chauhan - Civil Engineer & Data Scientist">
+    <meta property="og:description" content="Portfolio showcasing expertise in infrastructure data analysis, machine learning, and civil engineering projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayushchauhan.dev">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>Ayush Chauhan</h3>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" data-page="home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-page="about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link" data-page="projects">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link" data-page="blog">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link" data-page="services">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-page="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero__particles" id="particles"></div>
+                <div class="container">
+                    <div class="hero__content fade-in">
+                        <div class="hero__text">
+                            <p class="hero__greeting" id="dynamicGreeting">Good Evening!</p>
+                            <h1 class="hero__title">Ayush Chauhan</h1>
+                            <h2 class="hero__subtitle">Civil Engineer & Data Scientist</h2>
+                            <p class="hero__description">
+                                Bridging the gap between traditional civil engineering and modern data science 
+                                to create smarter, more sustainable infrastructure solutions.
+                            </p>
+                            <div class="hero__actions">
+                                <a href="#projects" class="btn btn--primary" data-page="projects">View My Work</a>
+                                <a href="#contact" class="btn btn--outline" data-page="contact">Get In Touch</a>
+                            </div>
+                        </div>
+                        <div class="hero__stats">
+                            <div class="stat">
+                                <span class="stat__number">5+</span>
+                                <span class="stat__label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">10+</span>
+                                <span class="stat__label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">3</span>
+                                <span class="stat__label">Research Publications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Preview -->
+            <section class="about-preview py-16">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <h2>About Me</h2>
+                        <p>A passionate engineer combining traditional infrastructure knowledge with cutting-edge data science</p>
+                    </div>
+                    <div class="about-preview__content fade-in">
+                        <div class="about-preview__text">
+                            <p>
+                                Currently pursuing B.Tech in Civil Engineering at Punjab Engineering College with a CGPA of 7.78/10, 
+                                I specialize in applying machine learning and data analytics to solve complex infrastructure challenges.
+                            </p>
+                            <p>
+                                My research focuses on transportation networks, rural accessibility, and sustainable urban planning, 
+                                with publications in leading journals and conferences.
+                            </p>
+                            <a href="#about" class="btn btn--primary" data-page="about">Learn More About Me</a>
+                        </div>
+                        <div class="about-preview__skills">
+                            <h3>Core Expertise</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span class="skill-icon">🐍</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">📊</span>
+                                    <span>Power BI</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">🗺️</span>
+                                    <span>QGIS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">🤖</span>
+                                    <span>Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section class="featured-projects py-16">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <h2>Featured Projects</h2>
+                        <p>Showcasing innovative solutions at the intersection of civil engineering and data science</p>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card fade-in">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Research</span>
+                                <h3>AI-Driven Lake Restoration</h3>
+                                <p>Predictive modeling for Sukhna Lake restoration using satellite data and advanced machine learning techniques.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">ML</span>
+                                    <span class="tech-tag">GIS</span>
+                                </div>
+                                <button class="btn btn--outline btn--sm" data-project="lake-restoration">View Details</button>
+                            </div>
+                        </article>
+                        
+                        <article class="project-card fade-in">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Data Science</span>
+                                <h3>Accident Severity Prediction</h3>
+                                <p>Machine learning model achieving 95.02% accuracy in predicting road accident severity using RandomForest.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">RandomForest</span>
+                                    <span class="tech-tag">Dask</span>
+                                </div>
+                                <button class="btn btn--outline btn--sm" data-project="accident-prediction">View Details</button>
+                            </div>
+                        </article>
+                        
+                        <article class="project-card fade-in">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Research</span>
+                                <h3>Bicycle Mobility Analysis</h3>
+                                <p>AI model analyzing gender differences in cycling patterns and mobility constraints in urban areas.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Statistical Analysis</span>
+                                    <span class="tech-tag">ML</span>
+                                </div>
+                                <button class="btn btn--outline btn--sm" data-project="bicycle-mobility">View Details</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="section-footer fade-in">
+                        <a href="#projects" class="btn btn--primary" data-page="projects">View All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Teasers -->
+            <section class="blog-teasers py-16">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <h2>Latest Blog Posts</h2>
+                        <p>Insights on infrastructure technology, data science, and research</p>
+                    </div>
+                    <div class="blog-grid">
+                        <article class="blog-card fade-in">
+                            <div class="blog-card__content">
+                                <span class="blog-card__category">Technology</span>
+                                <h3>The Future of Smart Infrastructure</h3>
+                                <p>Exploring how AI and IoT are revolutionizing infrastructure management and creating more sustainable cities...</p>
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__date">Dec 15, 2024</span>
+                                    <span class="blog-card__read-time">5 min read</span>
+                                </div>
+                                <button class="btn btn--outline btn--sm" data-blog="smart-infrastructure">Read More</button>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card fade-in">
+                            <div class="blog-card__content">
+                                <span class="blog-card__category">Research</span>
+                                <h3>Machine Learning in Transportation</h3>
+                                <p>How machine learning algorithms are transforming transportation planning and traffic management systems...</p>
+                                <div class="blog-card__meta">
+                                    <span class="blog-card__date">Nov 28, 2024</span>
+                                    <span class="blog-card__read-time">7 min read</span>
+                                </div>
+                                <button class="btn btn--outline btn--sm" data-blog="ml-transportation">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="section-footer fade-in">
+                        <a href="#blog" class="btn btn--primary" data-page="blog">View All Posts</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="container py-16">
+                <div class="page-header fade-in">
+                    <h1>About Me</h1>
+                    <p>Get to know the person behind the projects</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-story fade-in">
+                        <h2>My Story</h2>
+                        <p>
+                            I'm a passionate Civil Engineering student at Punjab Engineering College with a deep fascination 
+                            for data science and its applications in infrastructure development. With a CGPA of 7.78/10, 
+                            I've dedicated my academic journey to bridging the gap between traditional engineering practices 
+                            and modern technological solutions.
+                        </p>
+                        <p>
+                            My journey into data science began during my second year when I realized the immense potential 
+                            of machine learning in solving complex infrastructure challenges. Since then, I've worked on 
+                            multiple research projects, published papers in renowned journals, and gained practical experience 
+                            through internships at leading organizations.
+                        </p>
+                    </div>
+
+                    <div class="career-timeline fade-in">
+                        <h2>Career Timeline</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Research Intern - CSIR India (CRRI)</h3>
+                                    <span class="timeline-date">Jan 2025 - Jun 2025</span>
+                                    <p>Working on rural accessibility and transport network analysis for Meghalaya using MCDM and machine learning techniques.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Data and Logistics Head - ASCE PEC Chapter</h3>
+                                    <span class="timeline-date">Jul 2024 - Present</span>
+                                    <p>Leading Data & Logistics team, optimizing data analysis and streamlining event logistics.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Data Analyst - Ensight</h3>
+                                    <span class="timeline-date">May 2024 - Aug 2024</span>
+                                    <p>Managed data of 5,000+ colleges, provided insights to 2,000,000+ students for college selection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications fade-in">
+                        <h2>Certifications</h2>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <span class="cert-icon">📊</span>
+                                <div>
+                                    <h4>Microsoft Power BI Data Analyst Professional</h4>
+                                    <p>Microsoft</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🐍</span>
+                                <div>
+                                    <h4>Crash Course on Python</h4>
+                                    <p>Google</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🌐</span>
+                                <div>
+                                    <h4>HTML CSS and JavaScript for Web Developers</h4>
+                                    <p>Johns Hopkins University</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🗺️</span>
+                                <div>
+                                    <h4>Learning QGIS</h4>
+                                    <p>Professional Certification</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <div class="container py-16">
+                <div class="page-header fade-in">
+                    <h1>My Projects</h1>
+                    <p>Innovative solutions combining civil engineering expertise with data science</p>
+                </div>
+                
+                <div class="projects-filter fade-in">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                </div>
+
+                <div class="projects-container">
+                    <div class="project-detail-view" id="projectDetail" style="display: none;">
+                        <button class="back-btn" id="backToProjects">← Back to Projects</button>
+                        <div class="project-detail-content" id="projectDetailContent">
+                            <!-- Project details will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="projects-grid" id="projectsGrid">
+                        <article class="project-card fade-in" data-category="research">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Research</span>
+                                <h3>AI-Driven Lake Restoration</h3>
+                                <p>Predictive modeling for Sukhna Lake restoration using satellite data and AI techniques. Presented at CISSC 2025.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Machine Learning</span>
+                                    <span class="tech-tag">Remote Sensing</span>
+                                    <span class="tech-tag">GIS</span>
+                                </div>
+                                <div class="project-card__metrics">
+                                    <span class="metric">🏆 Published Research</span>
+                                    <span class="metric">📊 CISSC 2025</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm" data-project="lake-restoration">View Details</button>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in" data-category="data-science">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Data Science</span>
+                                <h3>Accident Severity Prediction</h3>
+                                <p>Machine learning model achieving 95.02% accuracy in predicting road accident severity using advanced algorithms.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">RandomForest</span>
+                                    <span class="tech-tag">Dask</span>
+                                    <span class="tech-tag">Pandas</span>
+                                </div>
+                                <div class="project-card__metrics">
+                                    <span class="metric">🎯 95.02% Accuracy</span>
+                                    <span class="metric">⚡ 25% Faster Processing</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm" data-project="accident-prediction">View Details</button>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in" data-category="research">
+                            <div class="project-card__content">
+                                <span class="project-card__category">Research</span>
+                                <h3>Gender Differences in Bicycle Mobility</h3>
+                                <p>AI model analyzing cycling patterns and gender-specific constraints in Chandigarh. Published in Springer.</p>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Machine Learning</span>
+                                    <span class="tech-tag">Statistical Analysis</span>
+                                </div>
+                                <div class="project-card__metrics">
+                                    <span class="metric">👥 1,801 Cyclists Surveyed</span>
+                                    <span class="metric">📚 Springer Publication</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm" data-project="bicycle-mobility">View Details</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Page -->
+        <div id="blog" class="page">
+            <div class="container py-16">
+                <div class="page-header fade-in">
+                    <h1>Blog</h1>
+                    <p>Thoughts on infrastructure technology, data science, and research</p>
+                </div>
+
+                <div class="blog-container">
+                    <div class="blog-post-view" id="blogPostView" style="display: none;">
+                        <button class="back-btn" id="backToBlog">← Back to Blog</button>
+                        <div class="blog-post-content" id="blogPostContent">
+                            <!-- Blog post content will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="blog-listing" id="blogListing">
+                        <div class="blog-categories fade-in">
+                            <button class="category-btn active" data-category="all">All Posts</button>
+                            <button class="category-btn" data-category="technology">Technology</button>
+                            <button class="category-btn" data-category="research">Research</button>
+                            <button class="category-btn" data-category="engineering">Engineering</button>
+                        </div>
+
+                        <div class="blog-posts">
+                            <article class="blog-post fade-in" data-category="technology">
+                                <div class="blog-post__content">
+                                    <span class="blog-post__category">Technology</span>
+                                    <h2>The Future of Smart Infrastructure</h2>
+                                    <p>Exploring how AI and IoT are revolutionizing infrastructure management and creating more sustainable cities. This comprehensive analysis covers current trends, challenges, and future opportunities in smart city development.</p>
+                                    <div class="blog-post__meta">
+                                        <span class="blog-post__author">Ayush Chauhan</span>
+                                        <span class="blog-post__date">December 15, 2024</span>
+                                        <span class="blog-post__read-time">5 min read</span>
+                                    </div>
+                                    <button class="btn btn--primary btn--sm" data-blog="smart-infrastructure">Read Full Post</button>
+                                </div>
+                            </article>
+
+                            <article class="blog-post fade-in" data-category="research">
+                                <div class="blog-post__content">
+                                    <span class="blog-post__category">Research</span>
+                                    <h2>Machine Learning in Transportation Engineering</h2>
+                                    <p>How machine learning algorithms are transforming transportation planning and traffic management systems. A deep dive into practical applications, case studies, and implementation strategies.</p>
+                                    <div class="blog-post__meta">
+                                        <span class="blog-post__author">Ayush Chauhan</span>
+                                        <span class="blog-post__date">November 28, 2024</span>
+                                        <span class="blog-post__read-time">7 min read</span>
+                                    </div>
+                                    <button class="btn btn--primary btn--sm" data-blog="ml-transportation">Read Full Post</button>
+                                </div>
+                            </article>
+
+                            <article class="blog-post fade-in" data-category="engineering">
+                                <div class="blog-post__content">
+                                    <span class="blog-post__category">Engineering</span>
+                                    <h2>Sustainable Urban Planning with Data Science</h2>
+                                    <p>Integrating data-driven approaches with traditional urban planning methodologies to create more sustainable and livable cities. Exploring tools, techniques, and real-world applications.</p>
+                                    <div class="blog-post__meta">
+                                        <span class="blog-post__author">Ayush Chauhan</span>
+                                        <span class="blog-post__date">October 20, 2024</span>
+                                        <span class="blog-post__read-time">6 min read</span>
+                                    </div>
+                                    <button class="btn btn--primary btn--sm" data-blog="sustainable-planning">Read Full Post</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Page -->
+        <div id="services" class="page">
+            <div class="container py-16">
+                <div class="page-header fade-in">
+                    <h1>Services</h1>
+                    <p>Professional services combining engineering expertise with data science innovation</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-card__icon">📊</div>
+                        <div class="service-card__content">
+                            <h3>Infrastructure Data Analysis</h3>
+                            <p>Comprehensive data analysis for infrastructure projects using advanced statistical modeling and predictive analytics.</p>
+                            <ul class="service-features">
+                                <li>Statistical Modeling & Analysis</li>
+                                <li>Predictive Analytics for Infrastructure</li>
+                                <li>Performance Optimization</li>
+                                <li>Custom Dashboards & Visualization</li>
+                            </ul>
+                            <div class="service-pricing">
+                                <span class="price">Starting at ₹15,000</span>
+                                <span class="price-period">per project</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-card__icon">🗺️</div>
+                        <div class="service-card__content">
+                            <h3>GIS Solutions & Mapping</h3>
+                            <p>Geographic Information Systems solutions for urban planning, spatial analysis, and infrastructure management.</p>
+                            <ul class="service-features">
+                                <li>Spatial Data Analysis</li>
+                                <li>Remote Sensing Applications</li>
+                                <li>Interactive Mapping Solutions</li>
+                                <li>Site Selection & Planning</li>
+                            </ul>
+                            <div class="service-pricing">
+                                <span class="price">Starting at ₹20,000</span>
+                                <span class="price-period">per project</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-card__icon">🤖</div>
+                        <div class="service-card__content">
+                            <h3>Machine Learning for Civil Engineering</h3>
+                            <p>AI/ML applications for engineering challenges including predictive modeling and process automation.</p>
+                            <ul class="service-features">
+                                <li>Predictive Maintenance Models</li>
+                                <li>Risk Assessment & Management</li>
+                                <li>Pattern Recognition Systems</li>
+                                <li>Process Automation Solutions</li>
+                            </ul>
+                            <div class="service-pricing">
+                                <span class="price">Starting at ₹25,000</span>
+                                <span class="price-period">per project</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-card__icon">🎨</div>
+                        <div class="service-card__content">
+                            <h3>Data Visualization & Reporting</h3>
+                            <p>Transform complex data into clear, actionable insights through compelling visualizations and reports.</p>
+                            <ul class="service-features">
+                                <li>Interactive Dashboards</li>
+                                <li>Custom Report Generation</li>
+                                <li>Data Storytelling</li>
+                                <li>Business Intelligence Solutions</li>
+                            </ul>
+                            <div class="service-pricing">
+                                <span class="price">Starting at ₹10,000</span>
+                                <span class="price-period">per project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-cta fade-in">
+                    <div class="cta-content">
+                        <h2>Ready to Start Your Project?</h2>
+                        <p>Let's discuss how I can help bring your vision to life with data-driven solutions.</p>
+                        <a href="#contact" class="btn btn--primary btn--lg" data-page="contact">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="container py-16">
+                <div class="page-header fade-in">
+                    <h1>Get In Touch</h1>
+                    <p>Let's collaborate on your next infrastructure or data science project</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info fade-in">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:chauhanayush485@gmail.com">chauhanayush485@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+917626820430">+91 7626820430</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chandigarh, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/ayush485" target="_blank">linkedin.com/in/ayush485</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/ayushChauhan485" target="_blank">github.com/ayushChauhan485</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container fade-in">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-control" required>
+                                    <option value="">Select a service</option>
+                                    <option value="data-analysis">Infrastructure Data Analysis</option>
+                                    <option value="gis-solutions">GIS Solutions & Mapping</option>
+                                    <option value="machine-learning">Machine Learning for Civil Engineering</option>
+                                    <option value="data-visualization">Data Visualization & Reporting</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell me about your project requirements..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                        
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Ayush Chauhan</h3>
+                    <p>Civil Engineer & Data Scientist</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home" data-page="home">Home</a></li>
+                            <li><a href="#about" data-page="about">About</a></li>
+                            <li><a href="#projects" data-page="projects">Projects</a></li>
+                            <li><a href="#services" data-page="services">Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:chauhanayush485@gmail.com">Email</a></li>
+                            <li><a href="https://linkedin.com/in/ayush485" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/ayushChauhan485" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Ayush Chauhan. All rights reserved.</p>
+                <p>Built with passion for infrastructure and data science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
