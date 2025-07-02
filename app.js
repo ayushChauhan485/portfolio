@@ -89,6 +89,153 @@ const projectsData = {
     metrics: ['1,801 Cyclists Surveyed', 'Springer Publication', '5 Behavior Clusters Identified'],
     liveLink: 'https://link.springer.com/chapter/bicycle-mobility-gender',
     status: 'Published'
+  },
+  'rural-accessibility-index': {
+    title: 'Rural Accessibility Index – Meghalaya',
+    category: 'Research',
+    description: 'Composite accessibility index for hilly terrain in West Garo Hills; informs infrastructure investment priorities.',
+    fullDescription: `This comprehensive research project develops a Rural Accessibility Index (RAI) for the challenging terrain of West Garo Hills, Meghalaya. Using Multi-Criteria Decision Making (MCDM) techniques combined with machine learning algorithms, the project analyzes transportation networks, infrastructure availability, and accessibility patterns across 85 villages. 
+
+Key Features:
+• Integration of topographical constraints and seasonal variations into accessibility modeling
+• Multi-Criteria Decision Making (MCDM) with stakeholder weighting
+• GIS-based spatial analysis for 85 villages
+• Socio-economic factor integration into index computation
+• Policy recommendations for infrastructure planning
+
+Technical Implementation:
+The analysis was performed using Python for data preprocessing and modeling, while QGIS handled geospatial data integration. Machine learning techniques supported factor weighting and scenario analysis. The result is a composite index that visualizes and prioritizes accessibility improvements.
+
+Impact and Results:
+The findings are compiled into a comprehensive policy report for CSIR-CRRI, guiding investment priorities for rural road and service connectivity. The methodology can be adapted for other hilly regions across India to support evidence-based infrastructure planning.`,
+    technologies: ['Python', 'QGIS', 'MCDM'],
+    metrics: ['85 Villages Analysed', 'Policy Report for CRRI'],
+    githubLink: '',
+    status: 'In Progress'
+  },
+
+  'accident-severity-prediction': {
+    title: 'Accident Severity Prediction',
+    category: 'Data Science',
+    description: 'RandomForest model with engineered spatio-temporal features to support road-safety agencies.',
+    fullDescription: `This advanced machine learning project develops a highly accurate prediction model for road accident severity using ensemble methods and big data processing. The RandomForest algorithm processes over 20,000 accident records, incorporating spatial, temporal, weather, and infrastructure features.
+
+Key Features:
+• RandomForest ensemble with hyperparameter tuning
+• Spatio-temporal feature engineering
+• Weather, traffic density, and road geometry integration
+• Distributed computing with Dask for large datasets
+• Real-time prediction capabilities
+
+Technical Implementation:
+Built using Python, Scikit-learn, and Dask, the pipeline efficiently processes big data while maintaining high model accuracy. Feature engineering includes traffic density patterns and seasonal accident variations to improve prediction reliability.
+
+Impact and Results:
+• 95.02% accuracy in severity prediction
+• Enables proactive safety measures and resource allocation
+• Supports traffic management systems in planning and emergency response`,
+    technologies: ['Python', 'Scikit-learn', 'Dask'],
+    metrics: ['95.02% Accuracy', '20k Records Processed'],
+    githubLink: 'https://github.com/ayushChauhan485/accident-severity',
+    status: 'Completed'
+  },
+
+  'upcrime-analysis': {
+    title: 'UPCrime Data Analysis',
+    category: 'Data Science',
+    description: 'Exploratory & visual analysis of crime patterns in Kanpur, Ghaziabad & Lucknow.',
+    fullDescription: `Comprehensive exploratory data analysis of crime patterns across three major cities in Uttar Pradesh: Kanpur, Ghaziabad, and Lucknow. The project employs advanced statistical techniques and data visualization to identify crime hotspots, temporal patterns, and correlation factors.
+
+Key Features:
+• Clustering algorithms for crime pattern identification
+• Time-series and seasonal analysis of crime incidence
+• Correlation analysis with demographic variables
+• Interactive mapping of crime hotspots
+
+Technical Implementation:
+Built in Python using Pandas and Matplotlib, the project includes automated data cleaning pipelines and advanced visualizations for stakeholder reporting.
+
+Impact and Results:
+• 70% of crimes successfully clustered into actionable patterns
+• 30% reduction in manual analysis time for agencies
+• Insights for data-driven policing strategies`,
+    technologies: ['Python', 'Pandas', 'Matplotlib'],
+    metrics: ['70% Crimes Clustered', '30% Faster Analysis'],
+    githubLink: '',
+    status: 'Completed'
+  },
+
+  'gender-cycling-ai': {
+    title: 'AI Model for Gender Differences in Bicycle Mobility',
+    category: 'Research',
+    description: 'Identified gender-specific motivators & constraints; informed inclusive cycling infrastructure.',
+    fullDescription: `This pioneering research project investigates gender differences in bicycle mobility patterns using advanced AI modeling and comprehensive survey data from Chandigarh. The study surveyed 1,801 cyclists to understand mobility behaviors, safety concerns, and infrastructure preferences.
+
+Key Features:
+• Large-scale survey with 1,801 samples
+• Machine learning classification of cycling behavior patterns
+• Identification of gender-specific safety concerns
+• Policy recommendations for inclusive cycling infrastructure
+
+Technical Implementation:
+Python-based machine learning models combined with Excel for survey data preprocessing. Statistical analysis identified significant variations in route choice, time-of-day preferences, and safety priorities.
+
+Impact and Recognition:
+Published in Springer's Innovative Infrastructure Solutions journal. The findings directly inform urban planning for safer, more inclusive cycling environments across Indian cities.`,
+    technologies: ['Python', 'ML', 'Excel'],
+    metrics: ['Springer Publication', '1,801 Survey Samples'],
+    liveLink: 'https://link.springer.com',
+    status: 'Published'
+  },
+
+  'surface-water-supply': {
+    title: 'Surface Water Supply Design',
+    category: 'Engineering',
+    description: 'IS 10500:2012 compliant rural water system with rainwater harvesting.',
+    fullDescription: `Comprehensive design project for a surface water supply system serving 85 villages in Moga District, Punjab. The design strictly adheres to IS 10500:2012 standards for drinking water quality and incorporates sustainable water management practices.
+
+Key Features:
+• Integrated rainwater harvesting systems
+• Gravity-fed distribution networks
+• Water treatment facilities optimized for rural needs
+• Hydraulic calculations and feasibility studies
+
+Technical Implementation:
+Designed in AutoCAD Civil 3D for precise 3D modeling and hydraulic simulation. Includes environmental impact assessments and cost-benefit analyses to ensure long-term sustainability.
+
+Impact and Results:
+• Achieves 30% reduction in water waste
+• Secures drinking water supply for 85 villages
+• Promotes sustainable water use in rural communities.`,
+    technologies: ['AutoCAD Civil 3D'],
+    metrics: ['30% Water-Waste Reduction', '85 Villages Covered'],
+    githubLink: '',
+    status: 'Completed'
+  },
+
+  'pecfest-digital-suite': {
+    title: 'PECFEST Creative Campaigns',
+    category: 'Engineering',
+    description: 'Directed motion graphics, aftermovies & brand assets for 30k-visitor festival.',
+    fullDescription: `Comprehensive creative direction project for PECFEST, North India's largest techno-cultural festival, attracting over 30,000 visitors. As Creative Joint Head, led a 100-member team in producing over 80 digital assets including motion graphics, social media campaigns, promotional videos, and brand identity materials.
+
+Key Features:
+• 80+ motion graphics and brand assets created
+• Social media campaigns achieving 40% higher engagement
+• Event aftermovies and countdown videos
+• Sponsor decks and live event graphics
+
+Technical Implementation:
+Adobe Suite (Photoshop, Illustrator, After Effects) for design and motion graphics. Figma for prototyping and team collaboration. Managed a large team to ensure quality and brand consistency.
+
+Impact and Results:
+• 40% increase in social media engagement
+• Consistent, professional branding across all event touchpoints
+• Enhanced attendee experience and sponsor visibility.`,
+    technologies: ['Adobe Suite', 'Figma'],
+    metrics: ['80+ Assets Created', '40% Engagement Increase'],
+    githubLink: '',
+    status: 'Completed'
   }
 };
 
@@ -371,8 +518,8 @@ class NavigationManager {
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (this.navMenu && !this.navMenu.contains(e.target) && 
-          this.navToggle && !this.navToggle.contains(e.target)) {
+      if (this.navMenu && !this.navMenu.contains(e.target) &&
+        this.navToggle && !this.navToggle.contains(e.target)) {
         this.closeMobileMenu();
       }
     });
@@ -384,27 +531,32 @@ class NavigationManager {
     });
 
     // Set initial state
-    history.replaceState({ page: 'home' }, '', '#home');
+    // At the end of NavigationManager.init()
+    const initialHash = window.location.hash.replace('#', '');
+    const initialPage = initialHash && document.getElementById(initialHash) ? initialHash : 'home';
+    this.navigateToPage(initialPage, false);
+    history.replaceState({ page: initialPage }, '', `#${initialPage}`);
+
   }
 
   navigateToPage(targetPage, updateHistory = true) {
     // Hide all pages
     this.pages.forEach(page => page.classList.remove('active'));
-    
+
     // Show target page
     const targetPageElement = document.getElementById(targetPage);
     if (targetPageElement) {
       targetPageElement.classList.add('active');
       this.currentPage = targetPage;
-      
+
       // Update active nav link
       this.updateActiveNavLink(targetPage);
-      
+
       // Update browser history
       if (updateHistory) {
         history.pushState({ page: targetPage }, '', `#${targetPage}`);
       }
-      
+
       // Scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -457,12 +609,12 @@ class ParticleSystem {
   createParticle() {
     const particle = document.createElement('div');
     particle.className = 'particle';
-    
+
     const size = Math.random() * 4 + 2;
     const x = Math.random() * 100;
     const y = Math.random() * 100;
     const duration = Math.random() * 20 + 10;
-    
+
     particle.style.cssText = `
       width: ${size}px;
       height: ${size}px;
@@ -471,14 +623,14 @@ class ParticleSystem {
       animation-duration: ${duration}s;
       animation-delay: ${Math.random() * 20}s;
     `;
-    
+
     this.container.appendChild(particle);
     this.particles.push(particle);
   }
 
   animate() {
     if (!this.isActive) return;
-    
+
     this.particles.forEach(particle => {
       const rect = particle.getBoundingClientRect();
       if (rect.top > window.innerHeight) {
@@ -486,7 +638,7 @@ class ParticleSystem {
         particle.style.left = Math.random() * 100 + '%';
       }
     });
-    
+
     requestAnimationFrame(() => this.animate());
   }
 
@@ -515,7 +667,7 @@ class GreetingManager {
   updateGreeting() {
     const hour = new Date().getHours();
     let greeting;
-    
+
     if (hour < 12) {
       greeting = 'Good Morning!';
     } else if (hour < 17) {
@@ -523,7 +675,7 @@ class GreetingManager {
     } else {
       greeting = 'Good Evening!';
     }
-    
+
     if (this.greetingElement) {
       this.greetingElement.textContent = greeting;
     }
@@ -604,12 +756,12 @@ class ProjectDetailManager {
     `;
 
     this.projectDetailContent.innerHTML = content;
-    
+
     if (this.projectsGrid) {
       this.projectsGrid.style.display = 'none';
     }
     this.projectDetailView.style.display = 'block';
-    
+
     // Scroll to top of detail view
     this.projectDetailView.scrollIntoView({ behavior: 'smooth' });
   }
@@ -685,12 +837,12 @@ class BlogPostManager {
     `;
 
     this.blogPostContent.innerHTML = content;
-    
+
     if (this.blogListing) {
       this.blogListing.style.display = 'none';
     }
     this.blogPostView.style.display = 'block';
-    
+
     // Scroll to top of post
     this.blogPostView.scrollIntoView({ behavior: 'smooth' });
   }
@@ -774,7 +926,7 @@ class ContactFormManager {
   init() {
     if (this.form) {
       this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-      
+
       // Real-time validation
       const inputs = this.form.querySelectorAll('input, textarea, select');
       inputs.forEach(input => {
@@ -786,7 +938,7 @@ class ContactFormManager {
 
   handleSubmit(e) {
     e.preventDefault();
-    
+
     const isValid = this.validateForm();
     if (isValid) {
       this.simulateFormSubmission();
@@ -798,14 +950,14 @@ class ContactFormManager {
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
     const message = document.getElementById('message');
-    
+
     let isValid = true;
-    
+
     if (name) isValid = this.validateField(name) && isValid;
     if (email) isValid = this.validateField(email) && isValid;
     if (subject) isValid = this.validateField(subject) && isValid;
     if (message) isValid = this.validateField(message) && isValid;
-    
+
     return isValid;
   }
 
@@ -825,7 +977,7 @@ class ContactFormManager {
           isValid = false;
         }
         break;
-      
+
       case 'email':
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value)) {
@@ -833,14 +985,14 @@ class ContactFormManager {
           isValid = false;
         }
         break;
-      
+
       case 'subject':
         if (value === '') {
           errorMessage = 'Please select a subject';
           isValid = false;
         }
         break;
-      
+
       case 'message':
         if (value.length < 10) {
           errorMessage = 'Message must be at least 10 characters long';
@@ -876,15 +1028,15 @@ class ContactFormManager {
     // Simulate form submission delay
     const submitButton = this.form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
-    
+
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
-    
+
     setTimeout(() => {
       if (this.form && this.successMessage) {
         this.form.style.display = 'none';
         this.successMessage.style.display = 'block';
-        
+
         // Reset form after success
         setTimeout(() => {
           this.form.reset();
@@ -949,7 +1101,7 @@ class ScrollAnimationManager {
 
   handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     // Show/hide back to top button
     if (this.backToTopButton) {
       if (scrollTop > 300) {
@@ -975,7 +1127,7 @@ class LoadingManager {
         this.hideLoading();
       }, 1000);
     });
-    
+
     // Fallback in case load event doesn't fire
     setTimeout(() => {
       this.hideLoading();
@@ -1020,7 +1172,7 @@ class Portfolio {
       this.managers.filter = new FilterManager();
       this.managers.contactForm = new ContactFormManager();
       this.managers.scrollAnimation = new ScrollAnimationManager();
-      
+
       // Initialize particle system
       const particlesContainer = document.getElementById('particles');
       if (particlesContainer) {
@@ -1029,7 +1181,7 @@ class Portfolio {
 
       // Add fade-in class to elements for animation
       this.addFadeInClasses();
-      
+
       console.log('Portfolio initialized successfully');
     } catch (error) {
       console.error('Error initializing portfolio:', error);
