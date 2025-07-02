@@ -1,109 +1,93 @@
-# portfolio
+# 📜 Ayush Chauhan – Civil Engineer & Data Scientist Portfolio
 
-📜 Ayush Chauhan – Civil Engineer & Data Scientist Portfolio
-Welcome to my personal portfolio website repository.
+Welcome to my personal portfolio website repository.  
 This site showcases my work, research, skills, blog posts, and contact information in a modern, professional, mobile-friendly format with light/dark theme support.
 
-🌟 Live Demo
-🔗 [View the Live Site](https://ayushchauhan485.github.io/portfolio)
+## 🌟 Live Demo
 
-📂 Table of Contents
-Features
+**[🔗 View the Live Site](https://yourdomain.com)**  
+*(Replace with your actual domain once deployed)*
 
-Site Structure
+---
 
-Installation
+## 📂 Table of Contents
 
-Usage
+- [Features](#features)
+- [Site Structure](#site-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Editing Content](#editing-content)
+- [Customization](#customization)
+- [Credits](#credits)
+- [License](#license)
 
-Editing Content
+---
 
-Customization
+## 🚀 Features
 
-Credits
+✅ Multi-page layout with smooth navigation  
+✅ Light and dark mode toggle (with persistent user preference)  
+✅ Mobile-friendly, responsive design  
+✅ Animated sections with smooth transitions  
+✅ Dynamic project and blog data from JavaScript objects  
+✅ Particle hero background  
+✅ Accessible semantic HTML  
+✅ SEO-friendly meta tags and OpenGraph previews  
+✅ Easy to update and extend  
 
-License
+---
 
-🚀 Features
-✅ Multi-page layout with smooth navigation
-✅ Light and dark mode toggle (with persistent user preference)
-✅ Mobile-friendly, responsive design
-✅ Animated sections with smooth transitions
-✅ Dynamic project and blog data from JavaScript objects
-✅ Particle hero background
-✅ Accessible semantic HTML
-✅ SEO-friendly meta tags and OpenGraph previews
-✅ Easy to update and extend
+## 📦 Site Structure
 
-📦 Site Structure
-Your site is a multi-section, multi-page setup with smooth client-side navigation using hash-based routing and dynamic rendering of content.
+Your site is a **multi-section, multi-page** setup with smooth client-side navigation using hash-based routing and dynamic rendering of content.  
 
 It includes:
 
-Main Pages
-Home (#home)
+### Main Pages
+- **Home** (`#home`)  
+  - Hero section
+  - About preview
+  - Featured projects
+  - Blog teasers
+  - Quick contact link
+- **About** (`#about`)  
+  - My Story
+  - Career Timeline
+  - Certifications
+- **Projects** (`#projects`)  
+  - Filterable grid of projects
+  - "View Details" for each project (dynamic modal / subview)
+- **Blog** (`#blog`)  
+  - List of posts with "Read More" to view full content
+- **Services** (`#services`)  
+  - Consulting/services offered
+- **Contact** (`#contact`)  
+  - Contact form with validation
 
-Hero section
+### Assets & Data
+- `index.html` – Core structure and section markup
+- `style.css` – Design system with variables, dark/light themes, layout
+- `app.js` – All dynamic data (projects, blog, theme, navigation)  
 
-About preview
+---
 
-Featured projects
-
-Blog teasers
-
-Quick contact link
-
-About (#about)
-
-My Story
-
-Career Timeline
-
-Certifications
-
-Projects (#projects)
-
-Filterable grid of projects
-
-"View Details" for each project (dynamic modal / subview)
-
-Blog (#blog)
-
-List of posts with "Read More" to view full content
-
-Services (#services)
-
-Consulting/services offered
-
-Contact (#contact)
-
-Contact form with validation
-
-Assets & Data
-index.html – Core structure and section markup
-
-style.css – Design system with variables, dark/light themes, layout
-
-app.js – All dynamic data (projects, blog, theme, navigation)
-
-🗂 Folder/File Overview
-bash
-Copy
-Edit
+## 🗂 Folder/File Overview
 .
-├── index.html         # Main HTML with all page sections
-├── style.css          # Themed, responsive styling
-├── app.js             # Dynamic data and interactivity
-└── assets/            # (Optional) Images, icons, fonts
-⚙️ Installation
-No build tools required.
-This is a vanilla HTML/CSS/JS site.
+├── index.html # Main HTML with all page sections
+├── style.css # Themed, responsive styling
+├── app.js # Dynamic data and interactivity
+└── assets/ # (Optional) Images, icons, fonts
+
+---
+
+## ⚙️ Installation
+
+No build tools required.  
+This is a **vanilla HTML/CSS/JS** site.
 
 1️⃣ Clone the repo:
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/yourusername/your-repo-name.git
 2️⃣ Open the folder:
 
@@ -246,11 +230,6 @@ Modify fonts via CSS variables.
 
 Update icons and images in assets/.
 
-📸 Example Screenshots
-(Replace these with your own screenshots)
-
-Home Section	Projects Section
-
 🌐 Deployment
 You can deploy to:
 
@@ -291,4 +270,8 @@ Email: yourname@example.com
 LinkedIn: Ayush Chauhan
 
 Website: https://yourdomain.com
+
+python
+Copy
+Edit
 
