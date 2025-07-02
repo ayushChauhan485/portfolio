@@ -1,2 +1,2 @@
 # portfolio
-This is my personal portfolio.
+The portfolio can be accessed at: https://ayushchauhan485.github.io/portfolio
