@@ -113,33 +113,7 @@ The findings are compiled into a comprehensive policy report for CSIR-CRRI, guid
     githubLink: '',
     status: 'In Progress'
   },
-
-  'accident-severity-prediction': {
-    title: 'Accident Severity Prediction',
-    category: 'Data Science',
-    description: 'RandomForest model with engineered spatio-temporal features to support road-safety agencies.',
-    fullDescription: `This advanced machine learning project develops a highly accurate prediction model for road accident severity using ensemble methods and big data processing. The RandomForest algorithm processes over 20,000 accident records, incorporating spatial, temporal, weather, and infrastructure features.
-
-Key Features:
-• RandomForest ensemble with hyperparameter tuning
-• Spatio-temporal feature engineering
-• Weather, traffic density, and road geometry integration
-• Distributed computing with Dask for large datasets
-• Real-time prediction capabilities
-
-Technical Implementation:
-Built using Python, Scikit-learn, and Dask, the pipeline efficiently processes big data while maintaining high model accuracy. Feature engineering includes traffic density patterns and seasonal accident variations to improve prediction reliability.
-
-Impact and Results:
-• 95.02% accuracy in severity prediction
-• Enables proactive safety measures and resource allocation
-• Supports traffic management systems in planning and emergency response,
-    technologies: ['Python', 'Scikit-learn', 'Dask'],
-    metrics: ['95.02% Accuracy', '20k Records Processed'],
-    githubLink: 'https://github.com/ayushChauhan485/accident-severity',
-    status: 'Completed'
-  },
-
+  
   'upcrime-analysis': {
     title: 'UPCrime Data Analysis',
     category: 'Data Science',
@@ -158,7 +132,7 @@ Built in Python using Pandas and Matplotlib, the project includes automated data
 Impact and Results:
 • 70% of crimes successfully clustered into actionable patterns
 • 30% reduction in manual analysis time for agencies
-• Insights for data-driven policing strategies`,
+• Insights for data-driven policing strategies,
     technologies: ['Python', 'Pandas', 'Matplotlib'],
     metrics: ['70% Crimes Clustered', '30% Faster Analysis'],
     githubLink: '',
