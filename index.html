@@ -1083,8 +1083,10 @@
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2024 Ayush Chauhan. All rights reserved.</p>
-                <p>Built with passion for infrastructure and data science.</p>
+                <p>&copy; <span id="year"></span> Ayush Chauhan. All rights reserved.</p>
+                <script>
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
             </div>
         </div>
     </footer>
