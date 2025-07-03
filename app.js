@@ -1,7 +1,7 @@
 // Application Data
 const projectsData = {
   'lake-restoration': {
-    title: 'AI-Driven Lake Restoration(In Press)',
+    title: 'AI-Driven Lake Restoration',
     category: 'Research',
     description: 'Predictive modeling for Sukhna Lake restoration using satellite data and AI techniques.',
     fullDescription: `This groundbreaking research project focuses on developing an AI-driven predictive model for lake restoration, specifically targeting Sukhna Lake in Chandigarh. The project combines advanced machine learning algorithms with satellite data analysis to create a comprehensive restoration framework.
@@ -91,7 +91,7 @@ const projectsData = {
     status: 'Published'
   },
   'rural-accessibility-index': {
-    title: 'Rural Accessibility Index – Meghalaya(In Press)',
+    title: 'Rural Accessibility Index – Meghalaya',
     category: 'Research',
     description: 'Composite accessibility index for hilly terrain in West Garo Hills; informs infrastructure investment priorities.',
     fullDescription: `This comprehensive research project develops a Rural Accessibility Index (RAI) for the challenging terrain of West Garo Hills, Meghalaya. Using Multi-Criteria Decision Making (MCDM) techniques combined with machine learning algorithms, the project analyzes transportation networks, infrastructure availability, and accessibility patterns across 85 villages. 
@@ -113,7 +113,33 @@ The findings are compiled into a comprehensive policy report for CSIR-CRRI, guid
     githubLink: '',
     status: 'In Progress'
   },
-  
+
+  'accident-severity-prediction': {
+    title: 'Accident Severity Prediction',
+    category: 'Data Science',
+    description: 'RandomForest model with engineered spatio-temporal features to support road-safety agencies.',
+    fullDescription: `This advanced machine learning project develops a highly accurate prediction model for road accident severity using ensemble methods and big data processing. The RandomForest algorithm processes over 20,000 accident records, incorporating spatial, temporal, weather, and infrastructure features.
+
+Key Features:
+• RandomForest ensemble with hyperparameter tuning
+• Spatio-temporal feature engineering
+• Weather, traffic density, and road geometry integration
+• Distributed computing with Dask for large datasets
+• Real-time prediction capabilities
+
+Technical Implementation:
+Built using Python, Scikit-learn, and Dask, the pipeline efficiently processes big data while maintaining high model accuracy. Feature engineering includes traffic density patterns and seasonal accident variations to improve prediction reliability.
+
+Impact and Results:
+• 95.02% accuracy in severity prediction
+• Enables proactive safety measures and resource allocation
+• Supports traffic management systems in planning and emergency response`,
+    technologies: ['Python', 'Scikit-learn', 'Dask'],
+    metrics: ['95.02% Accuracy', '20k Records Processed'],
+    githubLink: 'https://github.com/ayushChauhan485/accident-severity',
+    status: 'Completed'
+  },
+
   'upcrime-analysis': {
     title: 'UPCrime Data Analysis',
     category: 'Data Science',
@@ -132,14 +158,62 @@ Built in Python using Pandas and Matplotlib, the project includes automated data
 Impact and Results:
 • 70% of crimes successfully clustered into actionable patterns
 • 30% reduction in manual analysis time for agencies
-• Insights for data-driven policing strategies,
+• Insights for data-driven policing strategies`,
     technologies: ['Python', 'Pandas', 'Matplotlib'],
     metrics: ['70% Crimes Clustered', '30% Faster Analysis'],
     githubLink: '',
     status: 'Completed'
   },
 
-   'pecfest-digital-suite': {
+  'gender-cycling-ai': {
+    title: 'AI Model for Gender Differences in Bicycle Mobility',
+    category: 'Research',
+    description: 'Identified gender-specific motivators & constraints; informed inclusive cycling infrastructure.',
+    fullDescription: `This pioneering research project investigates gender differences in bicycle mobility patterns using advanced AI modeling and comprehensive survey data from Chandigarh. The study surveyed 1,801 cyclists to understand mobility behaviors, safety concerns, and infrastructure preferences.
+
+Key Features:
+• Large-scale survey with 1,801 samples
+• Machine learning classification of cycling behavior patterns
+• Identification of gender-specific safety concerns
+• Policy recommendations for inclusive cycling infrastructure
+
+Technical Implementation:
+Python-based machine learning models combined with Excel for survey data preprocessing. Statistical analysis identified significant variations in route choice, time-of-day preferences, and safety priorities.
+
+Impact and Recognition:
+Published in Springer's Innovative Infrastructure Solutions journal. The findings directly inform urban planning for safer, more inclusive cycling environments across Indian cities.`,
+    technologies: ['Python', 'ML', 'Excel'],
+    metrics: ['Springer Publication', '1,801 Survey Samples'],
+    liveLink: 'https://link.springer.com',
+    status: 'Published'
+  },
+
+  'surface-water-supply': {
+    title: 'Surface Water Supply Design',
+    category: 'Engineering',
+    description: 'IS 10500:2012 compliant rural water system with rainwater harvesting.',
+    fullDescription: `Comprehensive design project for a surface water supply system serving 85 villages in Moga District, Punjab. The design strictly adheres to IS 10500:2012 standards for drinking water quality and incorporates sustainable water management practices.
+
+Key Features:
+• Integrated rainwater harvesting systems
+• Gravity-fed distribution networks
+• Water treatment facilities optimized for rural needs
+• Hydraulic calculations and feasibility studies
+
+Technical Implementation:
+Designed in AutoCAD Civil 3D for precise 3D modeling and hydraulic simulation. Includes environmental impact assessments and cost-benefit analyses to ensure long-term sustainability.
+
+Impact and Results:
+• Achieves 30% reduction in water waste
+• Secures drinking water supply for 85 villages
+• Promotes sustainable water use in rural communities.`,
+    technologies: ['AutoCAD Civil 3D'],
+    metrics: ['30% Water-Waste Reduction', '85 Villages Covered'],
+    githubLink: '',
+    status: 'Completed'
+  },
+
+  'pecfest-digital-suite': {
     title: 'PECFEST Creative Campaigns',
     category: 'Engineering',
     description: 'Directed motion graphics, aftermovies & brand assets for 30k-visitor festival.',
@@ -164,7 +238,6 @@ Impact and Results:
     status: 'Completed'
   }
 };
-
 const blogData = {
   'smart-infrastructure': {
     title: 'The Future of Smart Infrastructure',
