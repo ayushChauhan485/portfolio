@@ -1254,6 +1254,7 @@ body {
   background: var(--color-primary-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+  color: var(--color-btn-primary-text);
 }
 
 .btn--outline {
