@@ -982,20 +982,6 @@
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📱</span>
-                            <div>
-                                <h4>Phone</h4>
-                                <a href="tel:+917626820430">+91 7626820430</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Chandigarh, India</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
                             <span class="contact-icon">💼</span>
                             <div>
                                 <h4>LinkedIn</h4>
@@ -1010,45 +996,44 @@
                                     target="_blank">github.com/ayushChauhan485</a>
                             </div>
                         </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID"
+                                    class="contact-logo" />
+                            </span>
+                            <div>
+                                <h4>ORCID</h4>
+                                <a href="https://orcid.org/0009-0000-4189-7676" target="_blank"
+                                    rel="noopener">orcid.org/0009-0000-4189-7676</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chandigarh, India</p>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="contact-form-container fade-in">
-                        <form class="contact-form" id="contactForm">
+                        <form id="contactForm" class="contact-form">
                             <div class="form-group">
-                                <label for="name" class="form-label">Full Name *</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                                <span class="error-message" id="nameError"></span>
+                                <label for="name" class="form-label">Name</label>
+                                <input id="name" name="name" type="text" class="form-control" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="email" class="form-label">Email Address *</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                                <span class="error-message" id="emailError"></span>
+                                <label for="email" class="form-label">Email</label>
+                                <input id="email" name="email" type="email" class="form-control" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="subject" class="form-label">Subject *</label>
-                                <select id="subject" name="subject" class="form-control" required>
-                                    <option value="">Select a service</option>
-                                    <option value="data-analysis">Infrastructure Data Analysis</option>
-                                    <option value="gis-solutions">GIS Solutions & Mapping</option>
-                                    <option value="machine-learning">Machine Learning for Civil Engineering</option>
-                                    <option value="data-visualization">Data Visualization & Reporting</option>
-                                    <option value="consultation">General Consultation</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <span class="error-message" id="subjectError"></span>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
                             </div>
-
-                            <div class="form-group">
-                                <label for="message" class="form-label">Message *</label>
-                                <textarea id="message" name="message" class="form-control" rows="5" required
-                                    placeholder="Tell me about your project requirements..."></textarea>
-                                <span class="error-message" id="messageError"></span>
-                            </div>
-
-                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                            <button type="submit" class="btn btn--primary">Send</button>
                         </form>
+
 
                         <div class="form-success" id="formSuccess" style="display: none;">
                             <div class="success-icon">✅</div>
