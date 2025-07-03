@@ -1,7 +1,7 @@
 // Application Data
 const projectsData = {
   'lake-restoration': {
-    title: 'AI-Driven Lake Restoration',
+    title: 'AI-Driven Lake Restoration(In Press)',
     category: 'Research',
     description: 'Predictive modeling for Sukhna Lake restoration using satellite data and AI techniques.',
     fullDescription: `This groundbreaking research project focuses on developing an AI-driven predictive model for lake restoration, specifically targeting Sukhna Lake in Chandigarh. The project combines advanced machine learning algorithms with satellite data analysis to create a comprehensive restoration framework.
@@ -91,7 +91,7 @@ const projectsData = {
     status: 'Published'
   },
   'rural-accessibility-index': {
-    title: 'Rural Accessibility Index – Meghalaya',
+    title: 'Rural Accessibility Index – Meghalaya(In Press)',
     category: 'Research',
     description: 'Composite accessibility index for hilly terrain in West Garo Hills; informs infrastructure investment priorities.',
     fullDescription: `This comprehensive research project develops a Rural Accessibility Index (RAI) for the challenging terrain of West Garo Hills, Meghalaya. Using Multi-Criteria Decision Making (MCDM) techniques combined with machine learning algorithms, the project analyzes transportation networks, infrastructure availability, and accessibility patterns across 85 villages. 
@@ -133,7 +133,7 @@ Built using Python, Scikit-learn, and Dask, the pipeline efficiently processes b
 Impact and Results:
 • 95.02% accuracy in severity prediction
 • Enables proactive safety measures and resource allocation
-• Supports traffic management systems in planning and emergency response`,
+• Supports traffic management systems in planning and emergency response,
     technologies: ['Python', 'Scikit-learn', 'Dask'],
     metrics: ['95.02% Accuracy', '20k Records Processed'],
     githubLink: 'https://github.com/ayushChauhan485/accident-severity',
@@ -165,55 +165,7 @@ Impact and Results:
     status: 'Completed'
   },
 
-  'gender-cycling-ai': {
-    title: 'AI Model for Gender Differences in Bicycle Mobility',
-    category: 'Research',
-    description: 'Identified gender-specific motivators & constraints; informed inclusive cycling infrastructure.',
-    fullDescription: `This pioneering research project investigates gender differences in bicycle mobility patterns using advanced AI modeling and comprehensive survey data from Chandigarh. The study surveyed 1,801 cyclists to understand mobility behaviors, safety concerns, and infrastructure preferences.
-
-Key Features:
-• Large-scale survey with 1,801 samples
-• Machine learning classification of cycling behavior patterns
-• Identification of gender-specific safety concerns
-• Policy recommendations for inclusive cycling infrastructure
-
-Technical Implementation:
-Python-based machine learning models combined with Excel for survey data preprocessing. Statistical analysis identified significant variations in route choice, time-of-day preferences, and safety priorities.
-
-Impact and Recognition:
-Published in Springer's Innovative Infrastructure Solutions journal. The findings directly inform urban planning for safer, more inclusive cycling environments across Indian cities.`,
-    technologies: ['Python', 'ML', 'Excel'],
-    metrics: ['Springer Publication', '1,801 Survey Samples'],
-    liveLink: 'https://link.springer.com',
-    status: 'Published'
-  },
-
-  'surface-water-supply': {
-    title: 'Surface Water Supply Design',
-    category: 'Engineering',
-    description: 'IS 10500:2012 compliant rural water system with rainwater harvesting.',
-    fullDescription: `Comprehensive design project for a surface water supply system serving 85 villages in Moga District, Punjab. The design strictly adheres to IS 10500:2012 standards for drinking water quality and incorporates sustainable water management practices.
-
-Key Features:
-• Integrated rainwater harvesting systems
-• Gravity-fed distribution networks
-• Water treatment facilities optimized for rural needs
-• Hydraulic calculations and feasibility studies
-
-Technical Implementation:
-Designed in AutoCAD Civil 3D for precise 3D modeling and hydraulic simulation. Includes environmental impact assessments and cost-benefit analyses to ensure long-term sustainability.
-
-Impact and Results:
-• Achieves 30% reduction in water waste
-• Secures drinking water supply for 85 villages
-• Promotes sustainable water use in rural communities.`,
-    technologies: ['AutoCAD Civil 3D'],
-    metrics: ['30% Water-Waste Reduction', '85 Villages Covered'],
-    githubLink: '',
-    status: 'Completed'
-  },
-
-  'pecfest-digital-suite': {
+   'pecfest-digital-suite': {
     title: 'PECFEST Creative Campaigns',
     category: 'Engineering',
     description: 'Directed motion graphics, aftermovies & brand assets for 30k-visitor festival.',
@@ -301,7 +253,7 @@ const blogData = {
     `
   },
   'ml-transportation': {
-    title: 'Machine Learning in Transportation Engineering',
+    title: 'Machine Learning in Transportation Engineering(In Press)',
     category: 'Research',
     author: 'Ayush Chauhan',
     date: 'November 28, 2024',
