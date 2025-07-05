@@ -6,8 +6,7 @@ Welcome to my personal portfolio website repository. This site showcases my work
 
 ## 🌟 Live Demo
 
-**[🔗 View the Live Site](https://yourdomain.com)**  
-*(Replace with your actual domain once deployed)*
+**[🔗 View the Live Site](https://ayushchauhan485.github.io/portfolio)**  
 
 ---
 
