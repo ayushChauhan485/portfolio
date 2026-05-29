@@ -974,7 +974,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(var(--color-background), 0.95);
+  background: var(--color-background);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
@@ -1434,6 +1434,13 @@ body {
   margin-bottom: var(--space-16);
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
 .metric {
   font-size: var(--font-size-xs);
   color: var(--color-success);
@@ -1859,6 +1866,33 @@ select.form-control {
   font-size: var(--font-size-sm);
 }
 
+/* Conference Participation */
+.conference-participation h2 {
+  margin-bottom: var(--space-16);
+}
+
+.conference-list {
+  list-style: none;
+  margin: 0 0 var(--space-16) 0;
+  padding: 0;
+}
+
+.conference-list li {
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.conference-list li:last-child {
+  border-bottom: none;
+}
+
+.conference-note {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
 /* Project/Blog Detail Views */
 .project-detail-view,
 .blog-post-view {
@@ -1931,6 +1965,17 @@ select.form-control {
 
 .project-meta>div {
   margin-bottom: var(--space-24);
+}
+
+.project-authors p,
+.project-venue p {
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.project-year {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
 }
 
 .tech-tags {

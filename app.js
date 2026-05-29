@@ -1,241 +1,107 @@
 // Application Data
 const projectsData = {
-  'lake-restoration': {
-    title: 'AI-Driven Lake Restoration',
-    category: 'Research',
-    description: 'Predictive modeling for Sukhna Lake restoration using satellite data and AI techniques.',
-    fullDescription: `This groundbreaking research project focuses on developing an AI-driven predictive model for lake restoration, specifically targeting Sukhna Lake in Chandigarh. The project combines advanced machine learning algorithms with satellite data analysis to create a comprehensive restoration framework.
-
-    Key Features:
-    • Integration of Landsat-7 ETM+ and ASTER satellite data for multi-temporal analysis
-    • Development of water quality parameter prediction models using machine learning
-    • Spatial-temporal analysis of lake ecosystem changes over the past decade
-    • Predictive modeling for optimal restoration intervention timing
-    • Cost-benefit analysis framework for restoration strategies
-
-    Technical Implementation:
-    The project utilizes Python-based machine learning libraries including scikit-learn, TensorFlow, and specialized remote sensing tools. The model processes multispectral satellite imagery to identify patterns in water quality degradation and predicts the effectiveness of various restoration interventions.
-
-    Impact and Results:
-    This research was presented at the Conference on Information Systems and Smart Cities (CISSC) 2025, where it received recognition for its innovative approach to environmental restoration. The model successfully predicted water quality improvements with 87% accuracy and provided actionable insights for policy makers.`,
-    technologies: ['Python', 'Machine Learning', 'Remote Sensing', 'GIS', 'TensorFlow', 'Scikit-learn'],
-    metrics: ['Presented at CISSC 2025', '87% Prediction Accuracy', 'Published Research'],
-    githubLink: 'https://github.com/ayushChauhan485/lake-restoration-ai',
-    status: 'Published Research'
+  'pm2-5-seasonal': {
+    title: 'Modeling of Seasonal Dynamics for Traffic-Dominant Particulate Matter Pollution in the Indo-Gangetic Plain',
+    category: 'Air Quality',
+    description: 'Multi-scale wavelet analysis, rolling PMF, and season-specific ML to understand PM2.5 dynamics in Delhi (2019-2024).',
+    fullDescription: `Abstract: PM2.5 in the Indo-Gangetic Plain fluctuates strongly: winter levels reach 140-180 ug/m3 and monsoon levels drop to 35-55 ug/m3, yet regulations rarely adjust to the 4.5-5x seasonal swing. We analyze Delhi air quality (2019-2024) using rolling Positive Matrix Factorisation (PMF), k-means clustering, continuous wavelet analysis, and season-focused machine learning to determine when and how to act. Wavelet analysis identifies three rhythms: seasonal (~200 days), transitional (75-100 days), and weather-driven (10-40 days). K-means reveals five pollution episode types with distinct source-weather combinations. Rolling PMF shows traffic's PM2.5 share rises to 35-50% in winter (annual average 22 +/- 8%) and falls to 10-15% in the monsoon. Shannon entropy indicates winter sources are concentrated (1.6-1.9 bits) while monsoon sources are more dispersed (2.7-3.1 bits), requiring broader control strategies. Non-exhaust sources (road dust, tire wear, brake dust) account for 70-85% of vehicle-related PM. The apparent PM2.5 decline of -2.8 ug/m3 per year (p<0.05) disappears after deweathering; the adjusted trend is weaker and not significant (-1.2 +/- 0.8 ug/m3 per year, p>0.05). Season-specific ML models outperform a year-round model (R2 0.89 winter, 0.93 monsoon vs 0.74 overall). Policy implications: targeted winter measures (heavy-truck limits, heating regulation, ammonia reduction) can cut PM by 30-40%, and post-monsoon biomass-burning controls can reduce sources by 50-70%. Combined, annual PM can fall 40-50%, moving Delhi toward the WHO interim target of 35 ug/m3 by 2028-2030. The study supports season-aware air quality management over uniform year-round controls.`,
+    technologies: ['Wavelet Analysis', 'Rolling PMF', 'K-Means', 'Season-specific ML'],
+    metrics: ['Winter traffic share 35-50%', 'Seasonal models R2 up to 0.93', 'Five-year dataset (2019-2024)'],
+    authors: ['Dr. Adinarayana Badveeti', 'Ayush Chauhan'],
+    venue: 'Sustainable Intelligent Infrastructure (SII) - Submission',
+    year: '2026',
+    status: 'Submitted',
+    pdfLink: 'Papers/Modeling of Seasonal Dynamics for Traffic-Dominant Particulate Matter Pollution in The Indo-Gangetic Plain- Using Multi-Scale Wavelet Analysis, Source Apportionment, And Episode-Specific Control Strategies.pdf'
   },
-  'accident-prediction': {
-    title: 'Accident Severity Prediction Model',
-    category: 'Data Science',
-    description: 'Machine learning model achieving 95.02% accuracy in predicting road accident severity.',
-    fullDescription: `This comprehensive data science project develops a highly accurate machine learning model for predicting road accident severity using advanced ensemble methods and big data processing techniques.
-
-    Project Overview:
-    The model processes over 20,000 traffic accident records to identify patterns and predict accident severity levels. Using RandomForest algorithm optimized with Dask for distributed computing, the system achieves unprecedented accuracy in severity prediction.
-
-    Key Features:
-    • Processing of 20,000+ accident records with 25+ feature variables
-    • Implementation of RandomForest with hyperparameter optimization
-    • Distributed computing using Dask for faster processing
-    • Feature engineering including weather, road conditions, and temporal factors
-    • Real-time prediction capability for traffic management systems
-
-    Technical Architecture:
-    Built using Python ecosystem with Pandas for data manipulation, Dask for distributed computing, and scikit-learn for machine learning. The model incorporates weather data, road geometry, traffic volume, and historical accident data to make predictions.
-
-    Performance Metrics:
-    • 95.02% accuracy in severity prediction
-    • 25% reduction in processing time compared to traditional methods
-    • 92% precision and 94% recall for severe accident prediction
-    • Real-time processing capability (< 100ms response time)
-
-    Applications:
-    The model has practical applications in emergency response planning, traffic management, and infrastructure safety assessment. It can help authorities allocate resources more effectively and implement preventive measures in high-risk areas.`,
-    technologies: ['Python', 'RandomForest', 'Dask', 'Pandas', 'Scikit-learn', 'NumPy'],
-    metrics: ['95.02% Accuracy', '25% Faster Processing', '20,000+ Records Processed'],
-    githubLink: 'https://github.com/ayushChauhan485/accident-prediction-ml',
-    status: 'Completed'
+  'sukhna-water-transport': {
+    title: 'Sustainable Water Transport and Lake Restoration: Integrating AI and Satellite Data for Sukhna Lake',
+    category: 'Ecological Restoration',
+    description: 'AI-driven predictive modeling with satellite remote sensing to forecast SDT, Chlorophyll-a, and LST in Sukhna Lake.',
+    fullDescription: `Abstract: This paper presents a comprehensive methodology to address the challenges of eutrophication and ecological degradation in Sukhna Lake (Chandigarh, India), combining AI-driven predictive modeling with eco-innovative solutions. Utilizing satellite remote sensing data from Landsat-7 ETM+ and ASTER, alongside in-situ measurements, the proposed framework predicts key water transport quality parameters, such as Secchi Disk Transparency (SDT), Chlorophyll-a, and Land Surface Temperature (LST). These parameters are critical for forecasting trends in eutrophication and assessing overall lake health. The study also introduces floating treatment wetlands and bioremediation as nature-based, adaptive solutions to mitigate nutrient inflow and improve water quality. The AI model provides a proactive, scalable approach for urban lake restoration, offering valuable insights for sustainable ecosystem management practices in urban lakes worldwide. This paper represents a step toward merging cutting-edge technology (AI and satellite remote sensing) with sustainable water transport of ecological interventions to tackle pressing sustainable environmental issues like eutrophication. The goal is not only to restore Sukhna Lake but also to create a scalable framework that can be used globally for urban lake restoration and sustainable transport ecosystem management for Chandigarh city in India.`,
+    technologies: ['Landsat-7 ETM+', 'ASTER', 'Remote Sensing', 'AI Modeling'],
+    metrics: ['IAHR World Congress 2025', 'Nature-based interventions'],
+    authors: ['Badveeti Adinarayana', 'Ayush Chauhan'],
+    venue: '41st IAHR World Congress (Extended Abstract)',
+    year: '2025',
+    status: 'Conference Submission',
+    pdfLink: 'Papers/SUSTAINABLE WATER TRANSPORT AND LAKE RESTORATION- INTEGRATING AI AND SATELLITE DATA FOR SUKHNA LAKE IN CHANDIGARH GREEN CITY, INDIA FOR ACHIEVING TO SDGs-2030.pdf'
   },
-  'bicycle-mobility': {
-    title: 'Gender Differences in Bicycle Mobility',
-    category: 'Research',
-    description: 'AI model analyzing cycling patterns and gender-specific constraints in urban areas.',
-    fullDescription: `This pioneering research investigates gender differences in bicycle mobility patterns using advanced AI modeling and comprehensive survey data from Chandigarh, India.
-
-    Research Objective:
-    To understand and quantify gender-based differences in cycling behavior, identify constraints faced by different genders, and provide data-driven recommendations for inclusive cycling infrastructure development.
-
-    Methodology:
-    The study employed a mixed-methods approach combining:
-    • Large-scale survey of 1,801 cyclists across Chandigarh
-    • AI-powered pattern recognition for mobility behavior analysis
-    • Statistical modeling of cycling frequency, route preferences, and safety concerns
-    • Machine learning clustering to identify distinct mobility patterns
-
-    Key Findings:
-    • Identified 5 distinct cycling behavior clusters with significant gender variations
-    • Women cyclists show 40% higher safety concerns affecting route choices
-    • Time-of-day preferences vary significantly between genders
-    • Infrastructure preferences differ markedly, with women preferring separated bike lanes
-
-    Technical Implementation:
-    The analysis utilized Python for statistical computing, machine learning libraries for pattern recognition, and GIS tools for spatial analysis of cycling routes and infrastructure usage.
-
-    Impact and Recognition:
-    This research has been published in a Springer journal and has influenced cycling infrastructure policy discussions in several Indian cities. The findings provide evidence-based recommendations for gender-inclusive transportation planning.
-
-    Policy Implications:
-    The research provides actionable insights for urban planners and policymakers to design more inclusive cycling infrastructure that addresses gender-specific mobility needs and constraints.`,
-    technologies: ['Python', 'Machine Learning', 'Statistical Analysis', 'GIS', 'Survey Research'],
-    metrics: ['1,801 Cyclists Surveyed', 'Springer Publication', '5 Behavior Clusters Identified'],
-    liveLink: 'https://link.springer.com/chapter/bicycle-mobility-gender',
-    status: 'Published'
+  'sukhna-ai-restoration': {
+    title: 'AI-Driven Predictive Modelling and Sustainable Interventions for Lake Restoration',
+    category: 'Ecological Restoration',
+    description: 'Sukhna Lake case study combining AI and satellite imagery to guide restoration strategies.',
+    fullDescription: `Abstract: This paper proposes a comprehensive methodology to address eutrophication and ecological degradation in Sukhna Lake, Chandigarh, using AI-driven predictive modeling combined with eco-innovative solutions. By leveraging satellite remote sensing data from Landsat-7 ETM+ and ASTER along with in-situ measurements, this framework enables the prediction of key water quality parameters and recommends sustainable, nature-based interventions. The proposed model forecasts trends in eutrophication using parameters such as Secchi Disk Transparency (SDT), Chlorophyll-a, and Land Surface Temperature (LST), while introducing floating treatment wetlands and bioremediation as adaptive solutions to reduce nutrient inflow. This framework aims to deliver a proactive, scalable approach for urban lake restoration, providing essential insights into sustainable ecosystem management practices globally.`,
+    technologies: ['Remote Sensing', 'AI Modeling', 'Water Quality', 'GIS'],
+    metrics: ['CISSC 2025 submission', 'Sukhna Lake case study'],
+    authors: ['Ayush Chauhan', 'Dr. Badveeti Adinarayana'],
+    venue: 'CISSC 2025',
+    year: '2025',
+    status: 'Conference Submission',
+    pdfLink: 'Papers/AI-Driven Predictive Modelling and Sustainable Interventions for Lake Restoration.pdf'
   },
-  'rural-accessibility-index': {
-    title: 'Rural Accessibility Index – Meghalaya',
-    category: 'Research',
-    description: 'Composite accessibility index for hilly terrain in West Garo Hills; informs infrastructure investment priorities.',
-    fullDescription: `This comprehensive research project develops a Rural Accessibility Index (RAI) for the challenging terrain of West Garo Hills, Meghalaya. Using Multi-Criteria Decision Making (MCDM) techniques combined with machine learning algorithms, the project analyzes transportation networks, infrastructure availability, and accessibility patterns across 85 villages. 
-
-Key Features:
-• Integration of topographical constraints and seasonal variations into accessibility modeling
-• Multi-Criteria Decision Making (MCDM) with stakeholder weighting
-• GIS-based spatial analysis for 85 villages
-• Socio-economic factor integration into index computation
-• Policy recommendations for infrastructure planning
-
-Technical Implementation:
-The analysis was performed using Python for data preprocessing and modeling, while QGIS handled geospatial data integration. Machine learning techniques supported factor weighting and scenario analysis. The result is a composite index that visualizes and prioritizes accessibility improvements.
-
-Impact and Results:
-The findings are compiled into a comprehensive policy report for CSIR-CRRI, guiding investment priorities for rural road and service connectivity. The methodology can be adapted for other hilly regions across India to support evidence-based infrastructure planning.`,
-    technologies: ['Python', 'QGIS', 'MCDM'],
-    metrics: ['85 Villages Analysed', 'Policy Report for CRRI'],
-    githubLink: '',
-    status: 'In Progress'
-  },
-
-  'accident-severity-prediction': {
-    title: 'Accident Severity Prediction',
-    category: 'Data Science',
-    description: 'RandomForest model with engineered spatio-temporal features to support road-safety agencies.',
-    fullDescription: `This advanced machine learning project develops a highly accurate prediction model for road accident severity using ensemble methods and big data processing. The RandomForest algorithm processes over 20,000 accident records, incorporating spatial, temporal, weather, and infrastructure features.
-
-Key Features:
-• RandomForest ensemble with hyperparameter tuning
-• Spatio-temporal feature engineering
-• Weather, traffic density, and road geometry integration
-• Distributed computing with Dask for large datasets
-• Real-time prediction capabilities
-
-Technical Implementation:
-Built using Python, Scikit-learn, and Dask, the pipeline efficiently processes big data while maintaining high model accuracy. Feature engineering includes traffic density patterns and seasonal accident variations to improve prediction reliability.
-
-Impact and Results:
-• 95.02% accuracy in severity prediction
-• Enables proactive safety measures and resource allocation
-• Supports traffic management systems in planning and emergency response`,
-    technologies: ['Python', 'Scikit-learn', 'Dask'],
-    metrics: ['95.02% Accuracy', '20k Records Processed'],
-    githubLink: 'https://github.com/ayushChauhan485/accident-severity',
-    status: 'Completed'
-  },
-
-  'upcrime-analysis': {
-    title: 'UPCrime Data Analysis',
-    category: 'Data Science',
-    description: 'Exploratory & visual analysis of crime patterns in Kanpur, Ghaziabad & Lucknow.',
-    fullDescription: `Comprehensive exploratory data analysis of crime patterns across three major cities in Uttar Pradesh: Kanpur, Ghaziabad, and Lucknow. The project employs advanced statistical techniques and data visualization to identify crime hotspots, temporal patterns, and correlation factors.
-
-Key Features:
-• Clustering algorithms for crime pattern identification
-• Time-series and seasonal analysis of crime incidence
-• Correlation analysis with demographic variables
-• Interactive mapping of crime hotspots
-
-Technical Implementation:
-Built in Python using Pandas and Matplotlib, the project includes automated data cleaning pipelines and advanced visualizations for stakeholder reporting.
-
-Impact and Results:
-• 70% of crimes successfully clustered into actionable patterns
-• 30% reduction in manual analysis time for agencies
-• Insights for data-driven policing strategies`,
-    technologies: ['Python', 'Pandas', 'Matplotlib'],
-    metrics: ['70% Crimes Clustered', '30% Faster Analysis'],
-    githubLink: '',
-    status: 'Completed'
-  },
-
   'gender-cycling-ai': {
-    title: 'AI Model for Gender Differences in Bicycle Mobility',
-    category: 'Research',
-    description: 'Identified gender-specific motivators & constraints; informed inclusive cycling infrastructure.',
-    fullDescription: `This pioneering research project investigates gender differences in bicycle mobility patterns using advanced AI modeling and comprehensive survey data from Chandigarh. The study surveyed 1,801 cyclists to understand mobility behaviors, safety concerns, and infrastructure preferences.
-
-Key Features:
-• Large-scale survey with 1,801 samples
-• Machine learning classification of cycling behavior patterns
-• Identification of gender-specific safety concerns
-• Policy recommendations for inclusive cycling infrastructure
-
-Technical Implementation:
-Python-based machine learning models combined with Excel for survey data preprocessing. Statistical analysis identified significant variations in route choice, time-of-day preferences, and safety priorities.
-
-Impact and Recognition:
-Published in Springer's Innovative Infrastructure Solutions journal. The findings directly inform urban planning for safer, more inclusive cycling environments across Indian cities.`,
-    technologies: ['Python', 'ML', 'Excel'],
-    metrics: ['Springer Publication', '1,801 Survey Samples'],
-    liveLink: 'https://link.springer.com',
-    status: 'Published'
+    title: 'Development of AI Model for Gender Differences in Bicycle Mobility of Green Urban Areas',
+    category: 'Urban Mobility',
+    description: 'Published study on gender-specific cycling behavior, motivators, and constraints in Chandigarh.',
+    fullDescription: `Abstract: Gender differences in cycling patterns, motivators, and constraints in Chandigarh, India were studied by researchers from Punjab Engineering College. The primary objective is to explore the gender-specific differences in cycling behaviour, including the distinct patterns, motivators, and constraints experienced by male and female cyclists. A secondary objective is to provide actionable policy recommendations to enhance cycling infrastructure and promote cycling as a sustainable mode of transportation and recreation in Chandigarh. The researchers collected data on traffic flow at intersections in different zones, conducted online and field surveys, and analyzed regulations and guidelines regarding Non-Motorized Transportation modes established by local governmental entities in Chandigarh. The study found that male cyclists predominantly used bicycles for commuting short distances efficiently, while females gravitated toward recreational cycling. Safety concerns were identified as a deterrent to daily commuting by bicycle, particularly affecting female cyclists. Dedicated cycling infrastructure and gender-sensitive policies were found to be vital for increasing female participation in cycling. Social norms and responsibilities also influenced women's cycling habits. Despite gender differences, both genders shared an interest in cycling for exercise and recreation. The study emphasized the need for gender-sensitive policies, urban planning initiatives, and improved safety measures to promote cycling as a sustainable and safe mode of transportation and recreation in Chandigarh. Improving safety protocols for cyclists of all genders is vital to reducing accidents and promoting cycling as a safe and practical mode of transportation within the city. The study provides evidence for making effective policy changes and infrastructure improvements to make Chandigarh more inclusive and biker-friendly. Promoting cycling as a sustainable mode of transportation and recreation among women is crucial for developing inclusive and sustainable urban areas. The researchers proposed machine learning techniques such as decision trees, random forest, and gradient boosting to examine the relationship between gender and cycling patterns, motivators, and constraints. Thematic analysis was used on collected qualitative data to identify recurring themes, patterns, and nuances. Analysis of the current cycle tracks in Chandigarh was done using photographic surveys and public polls. The team identified a lack of data on gender differences in cycling in Chandigarh, India. Such data is essential to improve the conditions of cycle tracks in the city since men and women have different cycling requirements. The study highlights the importance of gender-sensitive policies and urban planning initiatives in Chandigarh. In conclusion, the study provides valuable insights into gender differences in cycling patterns, motivators, and constraints in Chandigarh, India. The study emphasizes the need for gender-sensitive policies, urban planning initiatives, and improved safety measures to promote cycling as a sustainable and safe mode of transportation and recreation within the city.`,
+    technologies: ['Survey Research', 'Machine Learning', 'NMT Policy'],
+    metrics: ['Innovative Infrastructure Solutions (2024)', 'Policy recommendations for inclusive cycling'],
+    authors: ['B. Adinarayana', 'Ayush Chauhan', 'Balkaran Singh Sohal', 'Aryan', 'Reetik Kumar', 'Shubham Sharma'],
+    venue: 'Innovative Infrastructure Solutions',
+    year: '2024',
+    status: 'Published',
+    pdfLink: 'Papers/Development of AI model for gender differences in bicycle mobility of green urban areas.pdf',
+    doiLink: 'https://doi.org/10.1007/s41062-024-01709-w'
   },
-
-  'surface-water-supply': {
-    title: 'Surface Water Supply Design',
-    category: 'Engineering',
-    description: 'IS 10500:2012 compliant rural water system with rainwater harvesting.',
-    fullDescription: `Comprehensive design project for a surface water supply system serving 85 villages in Moga District, Punjab. The design strictly adheres to IS 10500:2012 standards for drinking water quality and incorporates sustainable water management practices.
-
-Key Features:
-• Integrated rainwater harvesting systems
-• Gravity-fed distribution networks
-• Water treatment facilities optimized for rural needs
-• Hydraulic calculations and feasibility studies
-
-Technical Implementation:
-Designed in AutoCAD Civil 3D for precise 3D modeling and hydraulic simulation. Includes environmental impact assessments and cost-benefit analyses to ensure long-term sustainability.
-
-Impact and Results:
-• Achieves 30% reduction in water waste
-• Secures drinking water supply for 85 villages
-• Promotes sustainable water use in rural communities.`,
-    technologies: ['AutoCAD Civil 3D'],
-    metrics: ['30% Water-Waste Reduction', '85 Villages Covered'],
-    githubLink: '',
-    status: 'Completed'
+  'pedestrian-behavior-sdgs': {
+    title: 'Modeling Pedestrian Walking Behavior Parameters and Pedestrian Safety at Congested Urban Intersections',
+    category: 'Urban Mobility',
+    description: 'Context-specific pedestrian safety modeling for educational and recreational zones aligned with SDGs-2030.',
+    fullDescription: `Abstract: In developing countries like India, especially in well-planned cities such as Chandigarh, pedestrian safety at urban intersections is shaped by factors including population density, land-use patterns, public transport availability, and surrounding activity intensity. Improving pedestrian safety at congested intersections requires integrating these context-specific factors into traffic planning, design, and management. This study aims to model pedestrian walking behaviour parameters and enhance pedestrian safety through a comprehensive, evidence-based approach aligned with Sustainable Development Goal 11, which emphasizes inclusive, safe, resilient, and sustainable urban development. The study employs a robust methodology involving detailed field observations and systematic data collection at selected high-congestion intersections. Key parameters influencing pedestrian behavior such as traffic flow, pedestrian volume and density, signal control, and crossing characteristics are analyzed to understand movement patterns and interaction dynamics. Both quantitative and qualitative analyses are used to capture behavioral complexity in diverse urban settings. The findings offer valuable insights for urban planners and policymakers, supporting informed decisions for developing safer, more efficient, and pedestrian-friendly infrastructure. The study highlights the importance of context-sensitive, location-specific interventions to improve pedestrian safety, traffic operations, and sustainable urban mobility for all road users.`,
+    technologies: ['Traffic Analysis', 'Safety Modeling', 'Field Observation'],
+    metrics: ['SAFEIND 2026 submission', 'SDG-11 focus'],
+    authors: ['Dr. Adinarayana Badveeti', 'Ayush Chauhan', 'Aryan', 'Reetik Kumar', 'Kasinayana Badweeti'],
+    venue: 'SAFEIND 2026 (SPARC Sponsored International Conference)',
+    year: '2026',
+    status: 'Submitted',
+    pdfLink: 'Papers/Modeling Pedestrian Walking Behavior Parameters and Pedestrian Safety at Congested Urban Intersections in Educational and Recreational Zones for SDGs-2030.pdf'
   },
-
-  'pecfest-digital-suite': {
-    title: 'PECFEST Creative Campaigns',
-    category: 'Engineering',
-    description: 'Directed motion graphics, aftermovies & brand assets for 30k-visitor festival.',
-    fullDescription: `Comprehensive creative direction project for PECFEST, North India's largest techno-cultural festival, attracting over 30,000 visitors. As Creative Joint Head, led a 100-member team in producing over 80 digital assets including motion graphics, social media campaigns, promotional videos, and brand identity materials.
-
-Key Features:
-• 80+ motion graphics and brand assets created
-• Social media campaigns achieving 40% higher engagement
-• Event aftermovies and countdown videos
-• Sponsor decks and live event graphics
-
-Technical Implementation:
-Adobe Suite (Photoshop, Illustrator, After Effects) for design and motion graphics. Figma for prototyping and team collaboration. Managed a large team to ensure quality and brand consistency.
-
-Impact and Results:
-• 40% increase in social media engagement
-• Consistent, professional branding across all event touchpoints
-• Enhanced attendee experience and sponsor visibility.`,
-    technologies: ['Adobe Suite', 'Figma'],
-    metrics: ['80+ Assets Created', '40% Engagement Increase'],
-    githubLink: '',
-    status: 'Completed'
+  'slow-moving-traffic-control': {
+    title: 'Study of Pedestrian and Slow-Moving Traffic Control Behaviour at Congested Intersections',
+    category: 'Urban Mobility',
+    description: 'Observational analysis of pedestrian and slow-moving traffic behavior to inform safer intersection design.',
+    fullDescription: `Abstract: In developing countries like India, urban planners, traffic engineers, and policymakers must consider factors that impact pedestrian behaviour and safety, including population density, the presence of public transportation, and the nature and frequency of activities in specific areas. The study's objective is to enhance pedestrian safety by evaluating these characteristics when designing and implementing strategies for congested intersections in urban areas. The study employs an extensive observational analysis and data collection at intersections located within congested zones. By examining factors that influence pedestrian behaviour, such as traffic flow, pedestrian density, and traffic signals, the research aims to generate insights into the intricacies of navigating diverse urban landscapes. The findings can aid city planners and policymakers in making informed decisions regarding the design of safer and more efficient pedestrian infrastructure. The study underscores the significance of accounting for the unique characteristics of diverse urban areas in the design of pedestrian-friendly intersections. Through an analysis of both quantitative and qualitative aspects of pedestrian behaviour, the research offers a detailed understanding of the dynamics involved. This study underscores the significance of effectively employing context-specific interventions to address pedestrian behaviour, enhance safety, and optimize traffic flow in congested zones, supporting Sustainable Development Goal 11.`,
+    technologies: ['Field Observation', 'Traffic Flow', 'Safety Planning'],
+    metrics: ['Innovative Infrastructure Solutions', 'Congested intersection focus'],
+    authors: ['Dr. Badveeti Adinarayana', 'Ayush Chauhan', 'Aryan', 'Reetik Kumar'],
+    venue: 'Innovative Infrastructure Solutions',
+    status: 'Manuscript',
+    pdfLink: 'Papers/Study of Pedestrian and Slow-moving Traffic Control Behaviour at Congested Intersections.docx'
+  },
+  'walkability-index-pec': {
+    title: 'Developing a Walkability Index for a University Green Campus',
+    category: 'Urban Mobility',
+    description: 'Linear Walkability Index (LWI) assessment for PEC campus using structured surveys and pedestrian metrics.',
+    fullDescription: `Abstract: In developing countries like India, walkability is an important concept in sustainable urban design. Sustainable urbanisation and technological advancements have significantly transformed city landscapes, emphasizing the importance of sustainable living spaces in urban areas. Educational campuses, reflecting broader urban settings, are integral to this trend, with a walkability index as a key component. Walkability refers to how encouraging an area is to walking, influenced by factors such as pedestrian infrastructure, safety, accessibility, and environmental quality. This study examines the linear walkability index (LWI) scores of the Punjab Engineering College (PEC) campus, assessing its impact on students, faculty, and staff. The research aims to identify the strengths and weaknesses of existing pedestrian infrastructure, understand campus users' perceptions, evaluate environmental and aesthetic qualities of pedestrian spaces, and propose practical recommendations for improvement in a university campus. Using established frameworks like the Urban Walking Environment Context and the Pedestrian Level of Service (PLOS) model, the study employs surveys and observational methods to gather data. The findings reveal that while PEC boasts several strengths in existing pedestrian infrastructure, areas such as signage, aesthetic appeal, and sidewalk conditions need enhancement. The composite walkability score (CWS), calculated using a weighted scoring system, provides a quantitative summary of overall walkability. The final LWI score was 3.8 out of 5, indicating a generally positive but not perfect walkability environment. The study highlights the potential of campuses to serve as models for sustainable urban design, emphasizing the integration of walkability in PEC campus planning to achieve SDG-2030.`,
+    technologies: ['LWI', 'Survey Design', 'PLOS', 'Urban Planning'],
+    metrics: ['TPMDC 2024 submission', 'Campus walkability metrics'],
+    authors: ['Dr. Badveeti Adinarayana', 'Ayush Chauhan', 'Aryan', 'Balkaran Singh Sohal'],
+    venue: 'TPMDC 2024',
+    year: '2024',
+    status: 'Conference Submission',
+    pdfLink: 'Papers/Developing of Walkability Index for University Green Campus.pdf'
+  },
+  'terrain-accessibility-gis-ahp': {
+    title: 'Terrain-Sensitive Accessibility Modelling for Rural Settlements: A GIS-AHP Framework with Participatory Calibration',
+    category: 'Rural Accessibility',
+    description: 'GIS-AHP framework applied to West Garo Hills, Meghalaya for 1,176 habitations and service access equity.',
+    fullDescription: `Abstract: Rural accessibility in hilly regions presents unique challenges that conventional proximity-based measures fail to capture adequately. This study develops a comprehensive accessibility assessment framework that integrates Geographic Information Systems (GIS) with the Analytic Hierarchy Process (AHP) to address the complex interplay of terrain constraints and service priorities in mountainous rural areas. The methodology was applied to the West Garo Hills district in Meghalaya, India, encompassing 1,176 habitations serving 501,294 residents across challenging topographic conditions. A structured stakeholder survey across 49 respondents derived consistency-validated priority weights for both service types and travel factors. Spatial analysis utilized high-resolution Digital Elevation Models to generate slope-adjusted friction surfaces, integrated with road network data to compute realistic travel-time rasters. Machine learning-enhanced analysis of Sentinel-2 satellite imagery achieved 89.7% accuracy in built-up area identification for habitation boundary extraction. Results reveal extreme spatial disparities in accessibility, with scores ranging from 0.130 to 0.642 across habitations, a 4.95-fold difference indicating severe inequity in service access. Notably, 57.7% of habitations fall into low or very low accessibility categories, while only 2.3% achieve very high accessibility scores. The analysis demonstrates an inverse relationship between settlement size and accessibility, with larger habitations experiencing lower access despite housing greater populations. This finding suggests that population concentration has not translated into proportional infrastructure investment, creating compound disadvantages for 272,260 residents living in low-accessibility areas. The AHP-GIS framework provides a participatory, terrain-aware approach to accessibility assessment that captures both physical constraints and community priorities, offering actionable insights for infrastructure planning and resource allocation in hilly rural regions.`,
+    technologies: ['GIS-AHP', 'Sentinel-2', 'SRTM DEM', 'Travel-Time Modeling'],
+    metrics: ['1,176 habitations', '89.7% built-up accuracy', '4.95x accessibility disparity'],
+    authors: ['Ayush Chauhan', 'Ravindra Kumar'],
+    venue: 'CSIR-Central Road Research Institute (CRRI)',
+    status: 'Technical Report',
+    pdfLink: 'Papers/Terrain-Sensitive Accessibility Modelling for Rural Settlements.pdf'
   }
 };
 const blogData = {
@@ -713,6 +579,10 @@ class ProjectDetailManager {
     const project = projectsData[projectId];
     if (!project || !this.projectDetailView || !this.projectDetailContent) return;
 
+    const safeLink = (url) => (url ? encodeURI(url) : '');
+    const pdfLink = safeLink(project.pdfLink);
+    const doiLink = safeLink(project.doiLink);
+
     const content = `
       <div class="project-header">
         <span class="project-category">${project.category}</span>
@@ -726,6 +596,21 @@ class ProjectDetailManager {
         </div>
         
         <div class="project-meta">
+          ${project.authors ? `
+          <div class="project-authors">
+            <h3>Authors</h3>
+            <p>${Array.isArray(project.authors) ? project.authors.join(', ') : project.authors}</p>
+          </div>
+          ` : ''}
+
+          ${(project.venue || project.year) ? `
+          <div class="project-venue">
+            <h3>Venue</h3>
+            ${project.venue ? `<p>${project.venue}</p>` : ''}
+            ${project.year ? `<p class="project-year">${project.year}</p>` : ''}
+          </div>
+          ` : ''}
+
           <div class="project-tech">
             <h3>Technologies Used</h3>
             <div class="tech-tags">
@@ -742,6 +627,8 @@ class ProjectDetailManager {
           
           <div class="project-links">
             <h3>Links</h3>
+            ${pdfLink ? `<a href="${pdfLink}" target="_blank" class="btn btn--outline btn--sm">Read Paper</a>` : ''}
+            ${doiLink ? `<a href="${doiLink}" target="_blank" class="btn btn--primary btn--sm">DOI</a>` : ''}
             ${project.githubLink ? `<a href="${project.githubLink}" target="_blank" class="btn btn--outline btn--sm">View on GitHub</a>` : ''}
             ${project.liveLink ? `<a href="${project.liveLink}" target="_blank" class="btn btn--primary btn--sm">View Publication</a>` : ''}
           </div>
