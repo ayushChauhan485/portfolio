@@ -1832,6 +1832,42 @@ select.form-control {
   line-height: 1.6;
 }
 
+/* Education */
+.education-section h2 {
+  margin-bottom: var(--space-24);
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-16);
+  margin-bottom: var(--space-32);
+}
+
+.education-item {
+  background: var(--color-surface);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border);
+  padding: var(--space-16);
+}
+
+.education-item h3 {
+  margin-bottom: var(--space-8);
+}
+
+.education-date {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  display: block;
+  margin-bottom: var(--space-8);
+}
+
+.education-item p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+}
+
 /* Certifications */
 .certifications h2 {
   margin-bottom: var(--space-24);
